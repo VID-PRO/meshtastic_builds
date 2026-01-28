@@ -40,4 +40,4 @@ jobs:
         with:
           name: heltec-v2-firmware
           path: |
-            firmware/.pio/build/heltec-v2_0/firmware*.bin
+            firmware/.pio/build/heltec-WSv2_1/firmware*.bin
