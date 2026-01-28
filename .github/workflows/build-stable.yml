@@ -38,7 +38,7 @@ jobs:
           cd firmware
           git submodule update --init --recursive
 
-      - name: Build Heltec V2 firmware
+      - name: Build Heltec WSL V2.1 firmware
         run: |
           cd firmware
           pio run -e heltec-wsl-v2_1
