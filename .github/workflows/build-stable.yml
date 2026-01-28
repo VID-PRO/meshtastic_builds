@@ -46,6 +46,6 @@ jobs:
       - name: Upload firmware binaries
         uses: actions/upload-artifact@v4
         with:
-          name: heltec-v2-${{ steps.get_release.outputs.tag }}
+          name: heltec-WSLv2_1-${{ steps.get_release.outputs.tag }}
           path: |
-            firmware/.pio/build/heltec-WSv2_1/firmware*.bin
+            firmware/.pio/build/heltec-WSLv2_1/firmware*.bin
