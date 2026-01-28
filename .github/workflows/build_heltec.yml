@@ -30,7 +30,7 @@ jobs:
           cd firmware
           git checkout develop   # or 'master' if you prefer stable
 
-      - name: Build Heltec V2 firmware
+      - name: Build Heltec WSL V2.1 firmware
         run: |
           cd firmware
           pio run -e heltec-wsl-v2_1
