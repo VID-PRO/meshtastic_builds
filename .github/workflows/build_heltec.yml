@@ -40,4 +40,4 @@ jobs:
         with:
           name: heltec-WSLv2_1-firmware
           path: |
-            firmware/.pio/build/heltec-WSLv2_1/firmware*.bin
+            firmware/.pio/build/heltec-wsl-v2_1/firmware*.bin
