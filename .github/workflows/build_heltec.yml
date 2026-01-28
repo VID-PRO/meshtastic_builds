@@ -1,4 +1,4 @@
-name: Build Meshtastic Heltec Wireless Stick V2.1
+name: Build Meshtastic Heltec Wireless Stick Lite V2.1
 
 on:
   push:
@@ -40,4 +40,4 @@ jobs:
         with:
           name: heltec-WSLv2_1-firmware
           path: |
-            firmware/.pio/build/heltec-WSv2_1/firmware*.bin
+            firmware/.pio/build/heltec-WSLv2_1/firmware*.bin
