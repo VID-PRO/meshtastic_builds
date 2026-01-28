@@ -33,11 +33,11 @@ jobs:
       - name: Build Heltec V2 firmware
         run: |
           cd firmware
-          pio run -e heltec_wsl_v2.1
+          pio run -e heltec-wsl-v2_1
 
       - name: Upload firmware binaries
         uses: actions/upload-artifact@v4
         with:
-          name: heltec-v2-firmware
+          name: heltec-WSLv2_1-firmware
           path: |
             firmware/.pio/build/heltec-WSv2_1/firmware*.bin
