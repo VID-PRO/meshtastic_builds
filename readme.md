@@ -1,10 +1,9 @@
-# Meshtastic Heltec Wireless Stick lite V2.1 Auto-Builds
+# Meshtastic  Auto-Builds
 
-This repository automatically builds the **Meshtastic firmware** for the  
-**Heltec Wireless Stick lite V2.1** board every night (development branch).
+This repository automatically builds the **Meshtastic firmware** for special boards every night (development branch).
 
 ## Downloads
-- Go to the [Actions tab](../../actions) → click the latest run → download the `heltec-WSLv2_1-????` artifact.
+- Go to the [Actions tab](../../actions) → click the latest run → download the artifact for the needed board.
 - Each artifact includes:
   - `firmware.bin`
   - `firmware.factory.bin`
@@ -15,6 +14,9 @@ Example (Linux/macOS):
 ```bash
 esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x0 firmware.factory.bin
 ```
+# Heltec WIreless Stick lite v2.1
+
+needed because not in the official repo.  
 
 # Heltec Vision Master e213 with joystick and 2 butttons:
 
