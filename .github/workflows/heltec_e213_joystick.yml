@@ -41,19 +41,19 @@ jobs:
       - name: Build Heltec Vision Master e213 with joystick firmware
         run: |
           cd firmware
-          echo "\n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define CANCEL_BUTTON_PIN 47 \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define CANCEL_BUTTON_ACTIVE_LOW true \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define CANCEL_BUTTON_ACTIVE_PULLUP false \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define CANNED_MESSAGE_MODULE_ENABLE 1 \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define CANNED_MESSAGE_ADD_CONFIRMATION 1 \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define HAS_TRACKBALL 1 \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define TB_UP 42 \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define TB_DOWN 45 \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define TB_LEFT 46 \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define TB_RIGHT 40 \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define TB_PRESS 41 \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
-          echo "#define TB_DIRECTION FALLING \n" >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo " " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define CANCEL_BUTTON_PIN 47 " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define CANCEL_BUTTON_ACTIVE_LOW true " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define CANCEL_BUTTON_ACTIVE_PULLUP false " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define CANNED_MESSAGE_MODULE_ENABLE 1 " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define CANNED_MESSAGE_ADD_CONFIRMATION 1 " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define HAS_TRACKBALL 1 " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define TB_UP 42 " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define TB_DOWN 45 " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define TB_LEFT 46 " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define TB_RIGHT 40 " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define TB_PRESS 41 " >> variants/esp32s3/heltec_vision_master_e213/variant.h
+          echo "#define TB_DIRECTION FALLING " >> variants/esp32s3/heltec_vision_master_e213/variant.h
           pio run -e  heltec-vision-master-e213
 
       - name: Upload firmware binaries
