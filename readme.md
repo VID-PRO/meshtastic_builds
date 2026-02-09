@@ -25,6 +25,9 @@ needed because not in the official repo.
 
 # Heltec Vision Master e213 with joystick and 2 butttons:
 
+For my retro pager project.  
+Comming soon to github.  
+
 ## Pin declaration
 
 | **ACTION** | **PIN** |
