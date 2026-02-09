@@ -1,19 +1,24 @@
 # Meshtastic  Auto-Builds
 
-This repository automatically builds the **Meshtastic firmware** for special boards every night (development branch).
+This repository automatically builds the **Meshtastic firmware** for special boards every night.
 
 ## Downloads
-- Go to the [Actions tab](../../actions) → click the latest run → download the artifact for the needed board.
+- Go to the [Actions tab](../../actions) → click the latest run for the desired booard → download the artifact.
 - Each artifact includes:
   - `firmware.bin`
   - `firmware.factory.bin`
-- Or go to releases
 
 ## Flashing
 Example (Linux/macOS):
 ```bash
 esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x0 firmware.factory.bin
 ```
+Example (Windows):  
+
+got to:
+https://esptool.spacehuhn.com/  
+Click connect and follow the prompts.
+
 # Heltec WIreless Stick lite v2.1
 
 needed because not in the official repo.  
