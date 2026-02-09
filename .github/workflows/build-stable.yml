@@ -1,4 +1,4 @@
-name: Build Meshtastic Heltec Wireless Stick Lite V2.1 (on upstream release)
+name: Heltec Wireless Stick Lite V2.1
 
 on:
   workflow_dispatch:     # Manual trigger for testing
