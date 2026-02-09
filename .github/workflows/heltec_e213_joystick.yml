@@ -1,4 +1,4 @@
-name: Build Meshtastic Heltec Vision Master e213 with joystick (on upstream release)
+name: Heltec Vision Master e213 with joystick and 2 buttons
 
 on:
   workflow_dispatch:     # Manual trigger for testing
